@@ -12,8 +12,8 @@
 </template>
 <script setup lang="ts">
 const sayHi = () => {
-  alert("hi svg");
-};
+  alert('hi svg')
+}
 </script>
 <style lang="scss">
 .custom-class {

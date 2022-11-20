@@ -11,8 +11,8 @@ import 'virtual:svg-icons-register'
 import './styles/index.scss'
 
 createApp(App)
-.use(ElementPlus)
-.use(router)
-.use(createPinia())
-.use(initSvgIcon)
-.mount('#app')
+  .use(ElementPlus)
+  .use(router)
+  .use(createPinia())
+  .use(initSvgIcon)
+  .mount('#app')
