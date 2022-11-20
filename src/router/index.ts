@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Dashboard',
         component: () =>
           import(
-            /* webpackChunkName: 'dashboard' */ '@/views/dashboard/index.vue'
+            /* webpackChunkName: 'dashboard' */ '../views/dashboard/index.vue'
           ),
         meta: {
           title: 'Dashboard' // 需要配置声明文件否则无提示
@@ -22,11 +22,11 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/home.vue')
   },
   {
     path: '/about',
-    component: () => import('../views/About.vue')
+    component: () => import('../views/about.vue')
   }
 ]
 export default createRouter({
