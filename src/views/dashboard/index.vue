@@ -16,10 +16,10 @@
 
 <script setup lang="ts">
 // import { getCurrentInstance } from "vue";
-const { proxy } = getCurrentInstance()!;
+const { proxy } = getCurrentInstance()!
 const sayHi = () => {
-  proxy?.$message.success("恭喜你，这是一条成功消息");
-};
+  proxy?.$message.success('恭喜你，这是一条成功消息')
+}
 </script>
 <style lang="scss">
 .custom-class {
