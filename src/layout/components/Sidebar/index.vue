@@ -20,12 +20,12 @@
   </el-menu>
 </template>
 <script lang="ts" setup>
-import scssVariables from "@/styles/variables.module.scss";
-import SidebarItem from "./SidebarItem.vue";
+import scssVariables from '@/styles/variables.module.scss'
+import SidebarItem from './SidebarItem.vue'
 
 // 导入路由表
-import { routes } from "@/router";
+import { routes } from '@/router'
 // 渲染路由
-const menuRoutes = computed(() => routes);
+const menuRoutes = computed(() => routes)
 const isCollapse = ref(false)
 </script>
