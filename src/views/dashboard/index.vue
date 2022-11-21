@@ -10,6 +10,7 @@
     <br />
     <br />
     <br />
+    缓存测试 <input type="text" />
     <el-button>按钮</el-button>
   </div>
 </template>

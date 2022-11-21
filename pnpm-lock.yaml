@@ -4,6 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.2.0
   '@commitlint/config-conventional': ^17.2.0
   '@types/node': ^18.11.9
+  '@types/path-browserify': ^1.0.0
   '@typescript-eslint/eslint-plugin': ^5.43.0
   '@typescript-eslint/parser': ^5.43.0
   '@vitejs/plugin-vue': ^3.2.0
@@ -14,6 +15,7 @@ specifiers:
   eslint-plugin-vue: ^9.7.0
   husky: ^8.0.2
   normalize.css: ^8.0.1
+  path-browserify: ^1.0.1
   pinia: ^2.0.24
   prettier: ^2.7.1
   sass: ^1.56.1
@@ -29,8 +31,10 @@ specifiers:
   vue-tsc: ^1.0.9
 
 dependencies:
+  '@types/path-browserify': 1.0.0
   element-plus: 2.2.22_vue@3.2.45
   normalize.css: 8.0.1
+  path-browserify: 1.0.1
   pinia: 2.0.24_zwu2zepfy3m6u2gunxlolp35gi
   unplugin-element-plus: 0.4.1_vite@3.2.4
   vue: 3.2.45
@@ -468,6 +472,10 @@ packages:
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
+
+  /@types/path-browserify/1.0.0:
+    resolution: {integrity: sha512-XMCcyhSvxcch8b7rZAtFAaierBYdeHXVvg2iYnxOV0MCQHmPuRRmGZPFDRzPayxcGiiSL1Te9UIO+f3cuj0tfw==}
+    dev: false
 
   /@types/semver/7.3.13:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
@@ -3007,6 +3015,10 @@ packages:
     resolution: {integrity: sha512-XHXfu/yOQRy9vYOtUDVMN60OEJjW013GoObG1o+xwQTpB9eYJX/BjXMsdW13ZDPruFhYYn0AG22w0xgQMwl3Nw==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /path-browserify/1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
+    dev: false
 
   /path-exists/4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
