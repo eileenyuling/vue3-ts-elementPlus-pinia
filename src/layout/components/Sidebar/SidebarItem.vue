@@ -115,5 +115,5 @@ const resolvePath = (childPath: string) => {
 
 const alwaysShowRootMenu = computed(
   () => props.item.meta && props.item.meta.alwaysShow
-);
+)
 </script>

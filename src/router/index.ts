@@ -17,7 +17,7 @@ export const asyncRoutes: Array<RouteRecordRaw> = [
           ),
         meta: {
           title: 'Documentation',
-          icon: 'documentation',
+          icon: 'documentation'
           // hidden: true
         }
       }
@@ -58,7 +58,7 @@ export const asyncRoutes: Array<RouteRecordRaw> = [
           title: 'Menu Management',
           icon: 'list'
         }
-      },
+      }
       // {
       //   path: 'role',
       //   component: () =>

@@ -25,7 +25,17 @@ import SidebarItem from './SidebarItem.vue'
 
 // 导入路由表
 import { routes } from '@/router'
+
+const route = useRoute()
 // 渲染路由
 const menuRoutes = computed(() => routes)
 const isCollapse = ref(false)
+
+const activeMenu = computed(() => {
+  const { path, meta } = route;
+  if (meta.activeMenu) {
+    return meta.activeMenu;
+  }
+  return path;
+});
 </script>
