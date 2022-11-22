@@ -9,11 +9,11 @@
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({ isActive: { type: Boolean, default: false } });
-const emit = defineEmits(["toggleClick"]);
+const props = defineProps({ isActive: { type: Boolean, default: false } })
+const emit = defineEmits(['toggleClick'])
 const toggleClick = () => {
-  emit("toggleClick");
-};
+  emit('toggleClick')
+}
 </script>
 
 <style lang="scss" scoped>

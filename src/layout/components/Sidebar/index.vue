@@ -24,15 +24,14 @@ import SidebarItem from './SidebarItem.vue'
 
 // 导入路由表
 import { routes } from '@/router'
-import { useAppStore } from "@/stores/app";
-import { storeToRefs } from "pinia";
+import { useAppStore } from '@/stores/app'
+import { storeToRefs } from 'pinia'
 
-const store = useAppStore();
+const store = useAppStore()
 // const sidebar = computed(() => {
 //   return useAppStore().sidebar
 // })
-const { sidebar } = storeToRefs(store);
-console.log(sidebar.value.opened)
+const { sidebar } = storeToRefs(store)
 const route = useRoute()
 // 渲染路由
 const menuRoutes = computed(() => routes)
