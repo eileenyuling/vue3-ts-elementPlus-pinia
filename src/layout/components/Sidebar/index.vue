@@ -1,5 +1,4 @@
 <template>
-  <h4 @click="isCollapse = !isCollapse">展收测试</h4>
   <el-menu
     class="sidebar-container-menu"
     mode="vertical"
@@ -7,7 +6,7 @@
     :background-color="scssVariables.menuBg"
     :text-color="scssVariables.menuText"
     :active-text-color="scssVariables.menuActiveText"
-    :collapse="isCollapse"
+    :collapse="!sidebar.opened"
     :collapse-transition="true"
   >
     <!-- 循环sidebar-item组件 -->
@@ -25,17 +24,24 @@ import SidebarItem from './SidebarItem.vue'
 
 // 导入路由表
 import { routes } from '@/router'
+import { useAppStore } from "@/stores/app";
+import { storeToRefs } from "pinia";
 
+const store = useAppStore();
+// const sidebar = computed(() => {
+//   return useAppStore().sidebar
+// })
+const { sidebar } = storeToRefs(store);
+console.log(sidebar.value.opened)
 const route = useRoute()
 // 渲染路由
 const menuRoutes = computed(() => routes)
-const isCollapse = ref(false)
 
 const activeMenu = computed(() => {
-  const { path, meta } = route;
+  const { path, meta } = route
   if (meta.activeMenu) {
-    return meta.activeMenu;
+    return meta.activeMenu
   }
-  return path;
-});
+  return path
+})
 </script>
